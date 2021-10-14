@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{57C98265-8707-40D8-8A5E-7F5ACB883872}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Unibe</RootNamespace>
+    <AssemblyName>Unibe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44338</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Unibe.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Unibe.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Form.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Ingresar.aspx" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-utilities.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap.min.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap.rtl.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.esm.js" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.js" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form.aspx.designer.vb">
+      <DependentUpon>Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form.aspx.vb">
+      <DependentUpon>Form.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar.aspx.designer.vb">
+      <DependentUpon>Ingresar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar.aspx.vb">
+      <DependentUpon>Ingresar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libman.json" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.esm.js.map" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.js.map" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="lib\twitter-bootstrap\scss\_accordion.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_alert.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_badge.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_button-group.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_buttons.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_card.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_carousel.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_close.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_containers.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_dropdown.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_forms.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_functions.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_grid.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_helpers.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_images.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_list-group.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_mixins.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_modal.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_nav.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_navbar.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_offcanvas.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_pagination.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_placeholders.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_popover.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_progress.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_reboot.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_root.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_spinners.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_tables.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_toasts.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_tooltip.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_transitions.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_type.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_utilities.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\_variables.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\bootstrap-utilities.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\bootstrap.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\forms\_floating-labels.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\forms\_form-check.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\forms\_form-control.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\forms\_form-range.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\forms\_form-select.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\forms\_form-text.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\forms\_input-group.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\forms\_labels.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\forms\_validation.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\helpers\_clearfix.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\helpers\_colored-links.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\helpers\_position.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\helpers\_ratio.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\helpers\_stacks.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\helpers\_stretched-link.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\helpers\_text-truncation.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\helpers\_visually-hidden.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\helpers\_vr.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_backdrop.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_color-scheme.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_container.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_deprecate.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_image.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_table-variants.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_utilities.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\mixins\_visually-hidden.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\utilities\_api.scss" />
+    <Content Include="lib\twitter-bootstrap\scss\vendor\_rfs.scss" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56711</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44338/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
